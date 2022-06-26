@@ -9,11 +9,13 @@
     $guinzaglio = new Item("Guinzaglio", 15);
 
 
-    $Jack = new isUserRegistered("Jack", "Sparrow", "esempio@gmail.com", 0);
+    $Jack = new isUserRegistered("Jack", "Sparrow", "esempio@gmail.com", 0, "", "", "");
 
-    $Michele = new isUserRegistered("Michele", "Iliescu", "unalltroesempio@gmail.com", 0);
+    $Michele = new isUserRegistered("Michele", "Iliescu", "unalltroesempio@gmail.com", 0, 1234123456785678, 2026, "");
+    var_dump($Michele);
+    
     $Michele->setDiscount(true);
-
+    $Michele->isCreditCardValid();
 
 
 ?>
